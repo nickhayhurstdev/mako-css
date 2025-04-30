@@ -1,0 +1,696 @@
+<!-- Mako CSS Example -->
+<!DOCTYPE html>
+
+<!-- HTML -->
+<html lang="en" data-theme="light">
+    <!-- Head -->
+    <head>
+        <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Title -->
+        <title>Mako CSS Framework</title>
+
+        <!-- Mako CSS -->
+        <link href="css/mako.css" rel="stylesheet">
+
+        <!-- Mako JS -->
+        <script src="js/mako.js"></script>
+
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+    </head>
+
+    <!-- Body -->
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-dark sticky text-light">
+            <!-- Left Area -->
+            <div class="navbar-start">
+                <!-- Brand -->
+                <div class="navbar-brand flex items-center">
+                    <!-- Logo -->
+                    <img src="assets/mako.png" alt="Mako Logo">
+                </div>
+
+                <!-- Sidebar Toggler -->
+                <span id="sidebar-toggler">
+                    <!-- Toggler Button -->
+                    <a class="navbar-link">
+                        <span class="navbar-icon">
+                            <i class="fa-solid fa-bars"></i>
+                        </span>
+                    </a>
+                </span>
+            </div>
+
+            <!-- Right Area -->
+            <div class="navbar-links">
+                <!-- Github -->
+                <a class="navbar-link" href="https://github.com/nickhayhurstdev/mako-css">
+                    <span class="navbar-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </span>
+                </a>
+
+                <!-- Dropdown -->
+                <div class="dropdown">
+                    <a class="navbar-link dropdown-toggle" data-dropdown-toggle>
+                        <span class="navbar-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <span class="navbar-text">
+                            Nick Hayhurst
+                        </span>
+                        <span class="navbar-icon-end">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a href="#">
+                            View
+                        </a>
+                        <a href="#">
+                            Edit
+                        </a>
+                        <a href="#">
+                            Delete
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Container -->
+        <div class="container">
+            <!-- Sidebar -->
+            <aside id="sidebar" class="sidebar">
+                <!-- Links -->
+                <div class="sidebar-links">
+                    <ul class="nav">
+                        <!-- Home -->
+                        <li>
+                            <a class="sidebar-link active" href="index.html">
+                                <span class="sidebar-icon">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </span>
+                                <span class="sidebar-text">
+                                    Home
+                                </span>
+                            </a>
+                        </li>
+
+                        <!-- Tables -->
+                        <li>
+                            <a class="sidebar-link" href="tables.html">
+                                <span class="sidebar-icon">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </span>
+                                <span class="sidebar-text">
+                                    Tables
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- Main -->
+            <main>
+                <!-- Welcome -->
+                <div id="mako-welcome" class="card">
+                    <div class="card-title">
+                        <h1>Mako Core - CSS Framework</h1>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="card">
+                    <!-- Card Title -->
+                    <div class="card-title">
+                        <!-- Title -->
+                        <p>Card Title</p>
+
+                        <!-- Toolbar -->
+                        <div class="card-toolbar">
+                            <button class="btn btn-primary">
+                                Toolbar
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        Card Content goes here...
+                    </div>
+
+                    <div class="card-footer">
+                        Card Footer goes here...
+                        <div class="card-toolbar">
+                            <button class="btn btn-outline-secondary btn-sm">Toolbar</button>
+                            <button class="btn btn-outline-danger btn-sm">Buttons</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Typography -->
+                <div id="mako-typography" class="card mb-2">
+                    <div class="card-title">
+                        Headings
+                    </div>
+
+                    <div class="card-body">
+                        <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                    </div>
+                </div>
+
+                <div id="mako-buttons" class="card mb-2">
+                    <div class="card-title">
+                        Buttons
+                    </div>
+
+                    <div class="card-body">
+                        <p>Mako has a base <kbd>.btn</kbd>  class that sets up basic styles such as padding and content alignment.</p>
+                        <p>By default, <kbd>.btn</kbd> controls have a transparent <kbd>border</kbd> and <kbd>background-color</kbd>, and lack any explicit focus and hover styles.</p>
+
+                        <hr>
+                        <h4>Default</h4>
+                        <button class="btn">Default</button>
+                        <button class="btn btn-primary">Primary</button>
+                        <button class="btn btn-secondary">Secondary</button>
+                        <button class="btn btn-success">Success</button>
+                        <button class="btn btn-danger">Danger</button>
+                        <button class="btn btn-warning">Warning</button>
+                        <button class="btn btn-info">Information</button>
+                        <button class="btn btn-dark">Dark</button>
+                        <button class="btn btn-light">Light</button>
+                        <h4>Flat</h4>
+                        <button class="btn btn-flat">Default</button>
+                        <button class="btn btn-flat btn-primary">Primary</button>
+                        <button class="btn btn-flat btn-secondary">Secondary</button>
+                        <button class="btn btn-flat btn-success">Success</button>
+                        <button class="btn btn-flat btn-danger">Danger</button>
+                        <button class="btn btn-flat btn-warning">Warning</button>
+                        <button class="btn btn-flat btn-info">Information</button>
+                        <button class="btn btn-flat btn-dark">Dark</button>
+                        <button class="btn btn-flat btn-light">Light</button>
+                        <h4>Pill</h4>
+                        <button class="btn btn-pill">Default</button>
+                        <button class="btn btn-pill btn-primary">Primary</button>
+                        <button class="btn btn-pill btn-secondary">Secondary</button>
+                        <button class="btn btn-pill btn-success">Success</button>
+                        <button class="btn btn-pill btn-danger">Danger</button>
+                        <button class="btn btn-pill btn-warning">Warning</button>
+                        <button class="btn btn-pill btn-info">Information</button>
+                        <button class="btn btn-pill btn-dark">Dark</button>
+                        <button class="btn btn-pill btn-light">Light</button>
+                        <hr>
+                        <h4>Outline Buttons</h4>
+                        <button class="btn btn-outline">Default</button>
+                        <button class="btn btn-outline-primary">Primary</button>
+                        <button class="btn btn-outline-secondary">Secondary</button>
+                        <button class="btn btn-outline-success">Success</button>
+                        <button class="btn btn-outline-danger">Danger</button>
+                        <button class="btn btn-outline-warning">Warning</button>
+                        <button class="btn btn-outline-info">Information</button>
+                        <button class="btn btn-outline-dark">Dark</button>
+                        <button class="btn btn-outline-light">Light</button>
+                        <hr>
+                        <h4>Outline Flat Buttons</h4>
+                        <button class="btn btn-flat btn-outline">Default</button>
+                        <button class="btn btn-flat btn-outline-primary">Primary</button>
+                        <button class="btn btn-flat btn-outline-secondary">Secondary</button>
+                        <button class="btn btn-flat btn-outline-success">Success</button>
+                        <button class="btn btn-flat btn-outline-danger">Danger</button>
+                        <button class="btn btn-flat btn-outline-warning">Warning</button>
+                        <button class="btn btn-flat btn-outline-info">Information</button>
+                        <button class="btn btn-flat btn-outline-dark">Dark</button>
+                        <button class="btn btn-flat btn-outline-light">Light</button>
+                        <hr>
+                        <h4>Outline Pill Buttons</h4>
+                        <button class="btn btn-pill btn-outline">Default</button>
+                        <button class="btn btn-pill btn-outline-primary">Primary</button>
+                        <button class="btn btn-pill btn-outline-secondary">Secondary</button>
+                        <button class="btn btn-pill btn-outline-success">Success</button>
+                        <button class="btn btn-pill btn-outline-danger">Danger</button>
+                        <button class="btn btn-pill btn-outline-warning">Warning</button>
+                        <button class="btn btn-pill btn-outline-info">Information</button>
+                        <button class="btn btn-pill btn-outline-dark">Dark</button>
+                        <button class="btn btn-pill btn-outline-light">Light</button>
+                        <hr>
+                        <h4>Ghost Buttons</h4>
+                        <button class="btn btn-ghost">Default</button>
+                        <button class="btn btn-ghost-primary">Primary</button>
+                        <button class="btn btn-ghost-secondary">Secondary</button>
+                        <button class="btn btn-ghost-success">Success</button>
+                        <button class="btn btn-ghost-danger">Danger</button>
+                        <button class="btn btn-ghost-warning">Warning</button>
+                        <button class="btn btn-ghost-info">Information</button>
+                        <button class="btn btn-ghost-dark">Dark</button>
+                        <button class="btn btn-ghost-light">Light</button>
+                        <hr>
+                        <h4>Ghost Flat Buttons</h4>
+                        <button class="btn btn-flat btn-ghost">Default</button>
+                        <button class="btn btn-flat btn-ghost-primary">Primary</button>
+                        <button class="btn btn-flat btn-ghost-secondary">Secondary</button>
+                        <button class="btn btn-flat btn-ghost-success">Success</button>
+                        <button class="btn btn-flat btn-ghost-danger">Danger</button>
+                        <button class="btn btn-flat btn-ghost-warning">Warning</button>
+                        <button class="btn btn-flat btn-ghost-info">Information</button>
+                        <button class="btn btn-flat btn-ghost-dark">Dark</button>
+                        <button class="btn btn-flat btn-ghost-light">Light</button>
+                        <hr>
+                        <h4>Ghost Pill Buttons</h4>
+                        <button class="btn btn-pill btn-ghost">Default</button>
+                        <button class="btn btn-pill btn-ghost-primary">Primary</button>
+                        <button class="btn btn-pill btn-ghost-secondary">Secondary</button>
+                        <button class="btn btn-pill btn-ghost-success">Success</button>
+                        <button class="btn btn-pill btn-ghost-danger">Danger</button>
+                        <button class="btn btn-pill btn-ghost-warning">Warning</button>
+                        <button class="btn btn-pill btn-ghost-info">Information</button>
+                        <button class="btn btn-pill btn-ghost-dark">Dark</button>
+                        <button class="btn btn-pill btn-ghost-light">Light</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Modals -->
+                <div class="card mb-2">
+                    <!-- Title -->
+                    <h1>Modals</h1>
+
+                    <!-- Buttons -->
+                    <button class="btn btn-primary" data-modal-open="mako-modal-default">Normal Modal</button>
+                    <button class="btn btn-primary" data-modal-open="mako-modal-xs">Smallest Modal</button>
+                    <button class="btn btn-primary" data-modal-open="mako-modal-sm">Small Modal</button>
+                    <button class="btn btn-primary" data-modal-open="mako-modal-md">Medium Modal</button>
+                    <button class="btn btn-primary" data-modal-open="mako-modal-lg">Large Modal</button>
+                    <button class="btn btn-primary" data-modal-open="mako-modal-xl">Largest Modal</button>
+
+                    <!-- Default Modal -->
+                    <div id="mako-modal-default" class="modal-container">
+                        <!-- Modal Content -->
+                        <div class="modal modal-content">
+                            <!-- Close Button -->
+                            <button class="modal-close" data-modal-close="mako-modal-default">
+                                &times;
+                            </button>
+
+                            <!-- Header -->
+                            <h2 class="modal-title">
+                                Default Modal
+                            </h2>
+
+                            <!-- Body -->
+                            <p class="modal-body">
+                                This is the default modal body ✨
+                            </p>
+
+                            <!-- Actions -->
+                            <div class="modal-actions">
+                                <button class="btn btn-primary" data-modal-close="mako-modal-default">
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smallest Modal -->
+                    <div id="mako-modal-xs" class="modal-container">
+                        <div class="modal-xs modal-content">
+                            <!-- Close Button -->
+                            <button class="modal-close" data-modal-close="mako-modal-xs">
+                                &times;
+                            </button>
+
+                            <!-- Header -->
+                            <h2 class="modal-title">
+                                Tiny Modal
+                            </h2>
+
+                            <!-- Body -->
+                            <div class="modal-body">
+                                <p class="mb-2">This is the smallest modal body ✨</p>
+                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="modal-actions">
+                                <button class="btn btn-primary" data-modal-close="mako-modal-xs">
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smallest Modal -->
+                    <div id="mako-modal-sm" class="modal-container">
+                        <div class="modal-sm modal-content">
+                            <!-- Close Button -->
+                            <button class="modal-close" data-modal-close="mako-modal-sm">
+                                &times;
+                            </button>
+
+                            <!-- Header -->
+                            <h2 class="modal-title">
+                                Small Modal
+                            </h2>
+
+                            <!-- Body -->
+                            <div class="modal-body">
+                                <p class="mb-2">This is the small modal body ✨</p>
+                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius a justo id porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed maximus mi vitae lacus vehicula pulvinar. Fusce semper eu mauris quis tristique. Integer vel venenatis lorem. Donec dignissim justo et egestas dignissim. Pellentesque quam dui, lacinia a fermentum non, gravida vel augue. Etiam vitae nibh dignissim, mattis sem sit amet, fringilla nibh. Donec nec congue enim. Mauris ultrices, elit ut viverra porta, nisi diam vulputate leo, egestas elementum magna massa eu sapien. Integer aliquet nisi ac euismod condimentum.</p>
+                                <p class="mb-2">Vivamus a aliquet augue, a blandit diam. Ut fermentum tellus blandit magna ornare, et bibendum sem posuere. Maecenas nec ligula feugiat diam porttitor feugiat eu nec orci. Nunc scelerisque tortor quis nisi dictum sodales. Praesent urna justo, bibendum non lacinia a, hendrerit et mi. Mauris facilisis laoreet nibh, et vestibulum purus volutpat ac. Nullam a risus auctor, commodo sapien vitae, tincidunt lorem. Etiam a faucibus mi. Morbi blandit mi a orci suscipit congue. Suspendisse lacinia lacinia mi, ut aliquam nisi luctus consectetur. Nullam congue justo lacus, ut sagittis nunc dictum quis. Donec non efficitur lectus. Proin blandit tempus erat sit amet porta.</p>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="modal-actions">
+                                <button class="btn btn-primary" data-modal-close="mako-modal-sm">
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medium Modal -->
+                    <div id="mako-modal-md" class="modal-container">
+                        <div class="modal-md modal-content">
+                            <!-- Close Button -->
+                            <button class="modal-close" data-modal-close="mako-modal-md">
+                                &times;
+                            </button>
+
+                            <!-- Header -->
+                            <h2 class="modal-title">
+                                Medium Modal
+                            </h2>
+
+                            <!-- Body -->
+                            <div class="modal-body">
+                                <p class="mb-2">This is the medium (and default) modal body ✨</p>
+                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius a justo id porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed maximus mi vitae lacus vehicula pulvinar. Fusce semper eu mauris quis tristique. Integer vel venenatis lorem. Donec dignissim justo et egestas dignissim. Pellentesque quam dui, lacinia a fermentum non, gravida vel augue. Etiam vitae nibh dignissim, mattis sem sit amet, fringilla nibh. Donec nec congue enim. Mauris ultrices, elit ut viverra porta, nisi diam vulputate leo, egestas elementum magna massa eu sapien. Integer aliquet nisi ac euismod condimentum.</p>
+                                <p class="mb-2">Vivamus a aliquet augue, a blandit diam. Ut fermentum tellus blandit magna ornare, et bibendum sem posuere. Maecenas nec ligula feugiat diam porttitor feugiat eu nec orci. Nunc scelerisque tortor quis nisi dictum sodales. Praesent urna justo, bibendum non lacinia a, hendrerit et mi. Mauris facilisis laoreet nibh, et vestibulum purus volutpat ac. Nullam a risus auctor, commodo sapien vitae, tincidunt lorem. Etiam a faucibus mi. Morbi blandit mi a orci suscipit congue. Suspendisse lacinia lacinia mi, ut aliquam nisi luctus consectetur. Nullam congue justo lacus, ut sagittis nunc dictum quis. Donec non efficitur lectus. Proin blandit tempus erat sit amet porta.</p>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="modal-actions">
+                                <button class="btn btn-primary" data-modal-close="mako-modal-md">
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Large Modal -->
+                    <div id="mako-modal-lg" class="modal-container">
+                        <div class="modal-lg modal-content">
+                            <!-- Close Button -->
+                            <button class="modal-close" data-modal-close="mako-modal-lg">
+                                &times;
+                            </button>
+
+                            <!-- Header -->
+                            <h2 class="modal-title">
+                                Large Modal
+                            </h2>
+
+                            <!-- Body -->
+                            <div class="modal-body">
+                                <p class="mb-2">This is the large modal body ✨</p>
+                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius a justo id porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed maximus mi vitae lacus vehicula pulvinar. Fusce semper eu mauris quis tristique. Integer vel venenatis lorem. Donec dignissim justo et egestas dignissim. Pellentesque quam dui, lacinia a fermentum non, gravida vel augue. Etiam vitae nibh dignissim, mattis sem sit amet, fringilla nibh. Donec nec congue enim. Mauris ultrices, elit ut viverra porta, nisi diam vulputate leo, egestas elementum magna massa eu sapien. Integer aliquet nisi ac euismod condimentum.</p>
+                                <p class="mb-2">Vivamus a aliquet augue, a blandit diam. Ut fermentum tellus blandit magna ornare, et bibendum sem posuere. Maecenas nec ligula feugiat diam porttitor feugiat eu nec orci. Nunc scelerisque tortor quis nisi dictum sodales. Praesent urna justo, bibendum non lacinia a, hendrerit et mi. Mauris facilisis laoreet nibh, et vestibulum purus volutpat ac. Nullam a risus auctor, commodo sapien vitae, tincidunt lorem. Etiam a faucibus mi. Morbi blandit mi a orci suscipit congue. Suspendisse lacinia lacinia mi, ut aliquam nisi luctus consectetur. Nullam congue justo lacus, ut sagittis nunc dictum quis. Donec non efficitur lectus. Proin blandit tempus erat sit amet porta.</p>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="modal-actions">
+                                <button class="btn btn-primary" data-modal-close="mako-modal-lg">
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Largest Modal -->
+                    <div id="mako-modal-xl" class="modal-container">
+                        <div class="modal-xl modal-content">
+                            <!-- Close Button -->
+                            <button class="modal-close" data-modal-close="mako-modal-xl">
+                                &times;
+                            </button>
+
+                            <!-- Header -->
+                            <h2 class="modal-title">
+                                Largest Modal
+                            </h2>
+
+                            <!-- Body -->
+                            <div class="modal-body">
+                                <p class="mb-2">This is the largest modal body ✨</p>
+                                <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque varius a justo id porttitor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed maximus mi vitae lacus vehicula pulvinar. Fusce semper eu mauris quis tristique. Integer vel venenatis lorem. Donec dignissim justo et egestas dignissim. Pellentesque quam dui, lacinia a fermentum non, gravida vel augue. Etiam vitae nibh dignissim, mattis sem sit amet, fringilla nibh. Donec nec congue enim. Mauris ultrices, elit ut viverra porta, nisi diam vulputate leo, egestas elementum magna massa eu sapien. Integer aliquet nisi ac euismod condimentum.</p>
+                                <p class="mb-2">Vivamus a aliquet augue, a blandit diam. Ut fermentum tellus blandit magna ornare, et bibendum sem posuere. Maecenas nec ligula feugiat diam porttitor feugiat eu nec orci. Nunc scelerisque tortor quis nisi dictum sodales. Praesent urna justo, bibendum non lacinia a, hendrerit et mi. Mauris facilisis laoreet nibh, et vestibulum purus volutpat ac. Nullam a risus auctor, commodo sapien vitae, tincidunt lorem. Etiam a faucibus mi. Morbi blandit mi a orci suscipit congue. Suspendisse lacinia lacinia mi, ut aliquam nisi luctus consectetur. Nullam congue justo lacus, ut sagittis nunc dictum quis. Donec non efficitur lectus. Proin blandit tempus erat sit amet porta.</p>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="modal-actions">
+                                <button class="btn btn-primary" data-modal-close="mako-modal-xl">
+                                    Confirm
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- Alerts -->
+                <div class="card mb-2">
+                    <h1>Alerts</h1>
+
+                    <!-- Trigger Button -->
+                    <button class="btn btn-primary" id="trigger-alert">
+                        Show Alert
+                    </button>
+
+                    <!-- Alert Overlay -->
+                    <div id="alert" class="alert-overlay" style="display: none;">
+                        <div class="alert-box">
+                            <button class="alert-close" id="alert-close">&times;</button>
+                            <div class="alert-content" id="alert-content"></div>
+                        </div>
+                    </div>
+
+                <!-- Script -->
+                <script>
+                    document.getElementById('trigger-alert').addEventListener('click', () => {
+                        Mako.showAlert(`
+                            <h2 class="text-xl font-bold">Are you sure?</h2>
+                            <p>This action cannot be undone.</p>
+                            <div class="modal-actions">
+                                <button class="btn btn-light" onclick="Mako.closeAlert()">Cancel</button>
+                                <button class="btn btn-danger" onclick="Mako.closeAlert();">Confirm</button>
+                            </div>
+                        `);
+                    });
+                </script>
+                </div>
+
+                <!-- Toasts -->
+                <div class="card mb-2">
+                    <!-- Title -->
+                    <h1>Toasts</h1>
+
+                    <!-- Buttons -->
+                    <button class="btn btn-dark" id="toast-all">All Toasts</button>
+                    <button class="btn btn-dark" id="toast-normal">Normal Toast</button>
+                    <button class="btn btn-success" id="toast-success">Success Toast</button>
+                    <button class="btn btn-danger" id="toast-danger">Danger Toast</button>
+                    <button class="btn btn-warning" id="toast-warning">Warning Toast</button>
+                    <button class="btn btn-info" id="toast-info">Info Toast</button>
+
+                    <!-- JS -->
+                    <script>
+                        // All Toasts
+                        document.getElementById('toast-all').addEventListener('click', () => {
+                            // Set Delay
+                            const delay = 100;
+
+                            setTimeout(() => {
+                                Mako.showToast({
+                                    icon: 'fa-bread-slice',
+                                    header: 'Normal',
+                                    message: 'This is the normal toast.'
+                                });
+                            }, delay);
+
+                            setTimeout(() => {
+                                Mako.showToast({
+                                    icon: 'fa-check-circle',
+                                    type: 'success',
+                                    header: 'Success',
+                                    message: 'This is the success toast.'
+                                });
+                            }, delay * 2);
+
+                            setTimeout(() => {
+                                Mako.showToast({
+                                    icon: 'fa-times-circle',
+                                    type: 'danger',
+                                    header: 'Danger',
+                                    message: 'This is the danger toast.'
+                                });
+                            }, delay * 3);
+
+                            setTimeout(() => {
+                                Mako.showToast({
+                                    icon: 'fa-triangle-exclamation',
+                                    type: 'warning',
+                                    header: 'Warning',
+                                    message: 'This is the warning toast.'
+                                });
+                            }, delay * 4);
+
+                            setTimeout(() => {
+                                Mako.showToast({
+                                    icon: 'fa-circle-info',
+                                    type: 'info',
+                                    header: 'Information',
+                                    message: 'This is the info toast.'
+                                });
+                            }, delay * 5);
+
+                            setTimeout(() => {
+                                Mako.showToast({
+                                    position: 'center-top',
+                                    header: 'Center Top',
+                                    message: 'This is the center-top toast.'
+                                });
+                            }, delay * 6);
+
+                            setTimeout(() => {
+                                Mako.showToast({
+                                    position: 'top-left',
+                                    header: 'Top Left',
+                                    message: 'This is the top-left toast.'
+                                });
+                            }, delay * 7);
+
+                            setTimeout(() => {
+                                Mako.showToast({
+                                    position: 'bottom-left',
+                                    header: 'Bottom Left',
+                                    message: 'This is the bottom-left toast.'
+                                });
+                            }, delay * 8);
+
+                            setTimeout(() => {
+                                Mako.showToast({
+                                    position: 'center-bottom',
+                                    header: 'Center Bottom',
+                                    message: 'This is the center-bottom toast.'
+                                });
+                            }, delay * 9);
+
+                            setTimeout(() => {
+                                Mako.showToast({
+                                    position: 'bottom-right',
+                                    header: 'Bottom Right',
+                                    message: 'This is the bottom-right toast.'
+                                });
+                            }, delay * 10);
+
+                            setTimeout(() => {
+                                Mako.showToast({
+                                    position: 'center',
+                                    header: 'Center',
+                                    message: 'This is the center toast.'
+                                });
+                            }, delay * 10);
+                        });
+
+                        // Normal Toast
+                        document.getElementById('toast-normal').addEventListener('click', () => {
+                            // Show Mako Toast
+                            Mako.showToast(
+                                {
+                                    icon: 'fa-bread-slice',
+                                    header: 'Normal',
+                                    message: 'This is the normal toast.',
+                                }
+                            );
+                        });
+
+                        // Success Toast
+                        document.getElementById('toast-success').addEventListener('click', () => {
+                            // Show Mako Toast
+                            Mako.showToast(
+                                {
+                                    icon: 'fa-check-circle',
+                                    type: 'success',
+                                    header: 'Success',
+                                    message: 'This is the success toast.',
+                                }
+                            );
+                        });
+
+                        // Danger Toast
+                        document.getElementById('toast-danger').addEventListener('click', () => {
+                            // Show Mako Toast
+                            Mako.showToast(
+                                {
+                                    icon: 'fa-times-circle',
+                                    type: 'danger',
+                                    header: 'Danger',
+                                    message: 'This is the danger toast.',
+                                }
+                            );
+                        });
+
+                        // Warning Toast
+                        document.getElementById('toast-warning').addEventListener('click', () => {
+                            // Show Mako Toast
+                            Mako.showToast(
+                                {
+                                    icon: 'fa-triangle-exclamation',
+                                    type: 'warning',
+                                    header: 'Warning',
+                                    message: 'This is the warning toast.',
+                                }
+                            );
+                        });
+
+                        // Info Toast
+                        document.getElementById('toast-info').addEventListener('click', () => {
+                            // Show Mako Toast
+                            Mako.showToast(
+                                {
+                                    icon: 'fa-circle-info',
+                                    type: 'info',
+                                    header: 'Information',
+                                    message: 'This is the info toast.',
+                                }
+                            );
+                        });
+                    </script>
+
+                    <!-- Positions -->
+                    <div class="mt-4">
+                        <h2 class="text-lg">Toast Positions</h2>
+                        <button class="btn btn-dark" onclick="Mako.showToast({position: 'top-left', header: 'Top Left', message: 'This a Toast in the top-left.'})">Top Left</button>
+                        <button class="btn btn-dark" onclick="Mako.showToast({position: 'top-right', header: 'Top Right', message: 'This a Toast in the top-right.'})">Top Right</button>
+                        <button class="btn btn-dark" onclick="Mako.showToast({position: 'bottom-left', header: 'Bottom Left', message: 'This a Toast in the bottom-left.'})">Bottom Left</button>
+                        <button class="btn btn-dark" onclick="Mako.showToast({position: 'bottom-right', header: 'Bottom Right', message: 'This a Toast in the bottom-right.'})">Bottom Right</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

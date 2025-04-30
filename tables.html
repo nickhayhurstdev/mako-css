@@ -1,0 +1,204 @@
+<!-- Mako CSS Example -->
+<!DOCTYPE html>
+
+<!-- HTML -->
+<html lang="en" data-theme="light">
+<!-- Head -->
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Mako CSS Framework</title>
+
+    <!-- Mako CSS -->
+    <link href="css/mako.css" rel="stylesheet">
+
+    <!-- Mako JS -->
+    <script src="js/mako.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet" />
+</head>
+
+<!-- Body -->
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-dark sticky text-light">
+    <!-- Left Area -->
+    <div class="navbar-start">
+        <!-- Brand -->
+        <div class="navbar-brand flex items-center">
+            <img src="assets/mako.png" alt="Mako Logo">
+        </div>
+
+        <!-- Sidebar Toggler -->
+        <span id="sidebar-toggler">
+            <a class="navbar-link">
+                <span class="navbar-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </a>
+        </span>
+    </div>
+
+    <!-- Right Area -->
+    <div class="navbar-links">
+        <!-- Profile -->
+        <a class="navbar-link" href="#">
+            <span class="navbar-icon">
+                <i class="fa-solid fa-user"></i>
+            </span>
+            <span class="navbar-text">Nick Hayhurst</span>
+        </a>
+    </div>
+</nav>
+
+<!-- Container -->
+<div class="container">
+    <!-- Sidebar -->
+    <aside id="sidebar" class="sidebar">
+        <!-- Links -->
+        <div class="sidebar-links">
+            <ul class="nav">
+                <!-- Home -->
+                <li>
+                    <a class="sidebar-link active" href="index.html">
+                        <span class="sidebar-icon">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </span>
+                        <span class="sidebar-text">
+                            Home
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main -->
+    <main>
+        <!-- Welcome -->
+        <div id="mako-welcome" class="card">
+            <div class="card-title">
+                <h1>Tables</h1>
+            </div>
+        </div>
+
+        <!-- Card -->
+        <div class="card">
+            <!-- Card Title -->
+            <div class="card-title">
+                <!-- Title -->
+                <p>Standard Tables</p>
+            </div>
+
+            <!-- Card Body -->
+            <div class="card-body">
+                <!-- Tables -->
+                <div id="mako-tables" class="card mb-2">
+                    <div class="card-title">
+                        Tables
+                    </div>
+
+                    <div class="card-body">
+                        <h4>
+                            Default Table
+                        </h4>
+
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>
+                                    Header 1
+                                </th>
+                                <th>
+                                    Header 2
+                                </th>
+                                <th>
+                                    Header 3
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    Cell 1
+                                </td>
+                                <td>
+                                    Cell 2
+                                </td>
+                                <td>
+                                    Cell 3
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Cell 1
+                                </td>
+                                <td>
+                                    Cell 2
+                                </td>
+                                <td>
+                                    Cell 3
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <hr>
+
+                        <h4>
+                            Extra Small Tables
+                        </h4>
+
+                        <div class="table-wrapper">
+                            <table class="table table-xs">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Status</th>
+                                    <th>Created</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Alice</td>
+                                    <td>Active</td>
+                                    <td>2025-04-17</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h4>
+                            Small Tables
+                        </h4>
+
+                        <div class="table-wrapper">
+                            <table class="table table-sm">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Status</th>
+                                    <th>Created</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Alice</td>
+                                    <td>Active</td>
+                                    <td>2025-04-17</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+</body>
+</html>
