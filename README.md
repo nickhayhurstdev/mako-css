@@ -3,7 +3,6 @@
 </h1>
 
 <p align="center">
-  <!-- <img src="https://github.com/user-attachments/assets/2c3a8243-aff5-47dd-9081-b0a2ff78a847" alt="mako-css" width="200"/> -->
   <img src="https://github.com/user-attachments/assets/5caa5924-9388-4011-a7eb-22c85c449aee" alt="mako-css" width="350"/>
 </p>
 
